@@ -1,1306 +1,824 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
+    <title>Clean Hub Uyo | Professional Cleaning Services</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<title>Clean Hub Uyo | Professional Cleaning Services</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
 
-<script src="https://cdn.tailwindcss.com"></script>
+      .hero-overlay {
+        background: linear-gradient(
+          rgba(0, 40, 90, 0.85),
+          rgba(0, 40, 90, 0.65)
+        );
+      }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      .animate-up {
+        animation: moveUp 1s ease forwards;
+      }
 
+      @keyframes moveUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
 
-<style>
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
 
-body{
-font-family:'Inter',sans-serif;
-scroll-behavior:smooth;
-}
+  <body class="bg-white text-gray-800">
+    <!-- TOP BAR -->
 
+    <div class="bg-blue-700 text-white text-sm py-2">
+      <div class="max-w-7xl mx-auto px-6 flex justify-between">
+        <p>📍 Uyo, Akwa Ibom State, Nigeria</p>
 
-.hero-overlay{
+        <p class="hidden md:block">Mon - Sat: 8:00am - 6:00pm</p>
+      </div>
+    </div>
 
-background:linear-gradient(
-rgba(0,40,90,0.85),
-rgba(0,40,90,0.65)
-);
+    <!-- NAVBAR -->
 
-}
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- LOGO -->
 
+        <a href="#" class="flex items-center gap-3">
+          <div
+            class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center"
+          >
+            <svg width="42" height="42" viewBox="0 0 100 100">
+              <path
+                d="M20 60 Q50 25 80 60"
+                stroke="white"
+                stroke-width="10"
+                fill="none"
+              />
 
-.animate-up{
+              <path d="M20 72 H80" stroke="white" stroke-width="10" />
 
-animation:moveUp 1s ease forwards;
+              <circle cx="78" cy="25" r="8" fill="#facc15" />
+            </svg>
+          </div>
 
-}
+          <div>
+            <h1 class="font-bold text-xl text-blue-800">Clean Hub</h1>
 
+            <p class="text-xs text-gray-500">Uyo</p>
+          </div>
+        </a>
 
-@keyframes moveUp{
+        <!-- DESKTOP MENU -->
 
-from{
-opacity:0;
-transform:translateY(40px);
-}
+        <nav class="hidden md:flex gap-8 font-medium">
+          <a href="#home" class="hover:text-blue-600"> Home </a>
 
-to{
-opacity:1;
-transform:translateY(0);
-}
+          <a href="#about" class="hover:text-blue-600"> About Us </a>
 
-}
+          <a href="#services" class="hover:text-blue-600"> Services </a>
 
-</style>
+          <a href="#packages" class="hover:text-blue-600"> packages</a>
 
+          <a href="#gallery" class="hover:text-blue-600"> Gallery </a>
 
-</head>
+          <a href="#contact" class="hover:text-blue-600"> Contact </a>
+        </nav>
 
-
-
-<body class="bg-white text-gray-800">
-
-
-
-<!-- TOP BAR -->
-
-<div class="bg-blue-700 text-white text-sm py-2">
-
-<div class="max-w-7xl mx-auto px-6 flex justify-between">
-
-<p>
-📍 Uyo, Akwa Ibom State, Nigeria
-</p>
-
-
-<p class="hidden md:block">
-Mon - Sat: 8:00am - 6:00pm
-</p>
-
-
-</div>
-
-</div>
-
-
-
-
-
-<!-- NAVBAR -->
-
-<header class="bg-white shadow-md sticky top-0 z-50">
-
-
-<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-
-<!-- LOGO -->
-
-<a href="#" class="flex items-center gap-3">
-
-
-<div class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center">
-
-
-<svg width="42" height="42" viewBox="0 0 100 100">
-
-<path d="M20 60 Q50 25 80 60"
-stroke="white"
-stroke-width="10"
-fill="none"/>
-
-
-<path d="M20 72 H80"
-stroke="white"
-stroke-width="10"/>
-
-
-<circle cx="78" cy="25" r="8" fill="#facc15"/>
-
-
-</svg>
-
-
-</div>
-
-
-<div>
-
-<h1 class="font-bold text-xl text-blue-800">
-Clean Hub
-</h1>
-
-
-<p class="text-xs text-gray-500">
-Uyo
-</p>
-
-
-</div>
-
-
-</a>
-
-
-
-
-
-<!-- DESKTOP MENU -->
-
-
-<nav class="hidden md:flex gap-8 font-medium">
-
-
-<a href="#home" class="hover:text-blue-600">
-Home
-</a>
-
-
-<a href="#about" class="hover:text-blue-600">
-About Us
-</a>
-
-
-<a href="#services" class="hover:text-blue-600">
-Services
-</a>
-
-
-<a href="#gallery" class="hover:text-blue-600">
-Gallery
-</a>
-
-
-<a href="#contact" class="hover:text-blue-600">
-Contact
-</a>
-
-
-</nav>
-
-
-
-
-
-<!-- WHATSAPP BUTTON -->
-
-<a href="https://wa.me/2347063385694"
-target="_blank"
-
-class="hidden md:block bg-green-500 text-white px-5 py-3 rounded-full font-semibold hover:bg-green-600 transition">
-
-
-💬 WhatsApp
-
-
-</a>
-
-
-
-
-
-<button id="menuBtn"
-
-class="md:hidden text-3xl">
-
-☰
-
-</button>
-
-
-
-</div>
-
-
-
-
-
-<!-- MOBILE MENU -->
-
-
-<div id="mobileMenu"
-
-class="hidden md:hidden bg-white px-6 pb-5">
-
-
-<a href="#home" class="block py-2">
-Home
-</a>
-
-
-<a href="#about" class="block py-2">
-About Us
-</a>
-
-
-<a href="#services" class="block py-2">
-Services
-</a>
-
-
-<a href="#gallery" class="block py-2">
-Gallery
-</a>
-
-
-<a href="#contact" class="block py-2">
-Contact
-</a>
-
-
-
-<a href="https://wa.me/2347063385694"
-
-target="_blank"
-
-class="block mt-3 bg-green-500 text-white text-center py-3 rounded">
-
-
-Chat on WhatsApp
-
-
-</a>
-
-
-</div>
-
-
-</header>
-
-
-
-
-
-<!-- HERO SECTION -->
-
-
-<section id="home"
-
-class="relative h-[90vh] flex items-center overflow-hidden bg-blue-900">
-
-
-<div class="absolute inset-0 hero-overlay"></div>
-
-
-<div class="absolute right-[-120px] top-20 w-[450px] h-[450px] bg-cyan-400 rounded-full opacity-20"></div>
-
-
-<div class="absolute left-[-100px] bottom-10 w-[300px] h-[300px] bg-blue-500 rounded-full opacity-20"></div>
-
-
-
-
-<div class="relative max-w-7xl mx-auto px-6 text-white">
-
-
-<p class="uppercase tracking-widest text-blue-200 mb-4 animate-up">
-
-Welcome To Clean Hub Uyo
-
-</p>
-
-
-
-
-<h2 class="text-4xl md:text-6xl font-extrabold leading-tight max-w-3xl animate-up">
-
-
-Professional.
-
-<br>
-
-
-Reliable.
-
-<br>
-
-
-<span class="text-cyan-300">
-
-Affordable.
-
-</span>
-
-
-<br>
-
-
-Cleaning Services
-
-
-</h2>
-
-
-
-
-
-<p class="mt-6 text-lg max-w-2xl text-gray-100">
-
-
-Clean Hub Uyo provides professional, reliable and affordable cleaning services for homes, offices, hotels, schools and businesses. We create cleaner, healthier and more comfortable spaces.
-
-
-</p>
-
-
-
-
-
-<div class="mt-8 flex flex-wrap gap-4">
-
-
-
-<a href="https://wa.me/2347063385694"
-
-target="_blank"
-
-class="bg-green-500 hover:bg-green-600 px-7 py-4 rounded-lg font-semibold transition">
-
-
-Book A Cleaning Service
-
-
-</a>
-
-
-
-<a href="#services"
-
-class="border border-white px-7 py-4 rounded-lg hover:bg-white hover:text-blue-700 transition">
-
-
-Explore Services
-
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-<!-- ABOUT SECTION -->
-
-<section id="about" class="py-20 bg-white">
-
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="text-center mb-12">
-
-<p class="text-blue-600 font-semibold uppercase tracking-wider">
-About Us
-</p>
-
-
-<h2 class="text-3xl md:text-4xl font-bold mt-3">
-Professional Cleaning You Can Trust
-</h2>
-
-
-</div>
-
-
-
-
-
-<div class="grid md:grid-cols-2 gap-10 items-center">
-
-
-<div>
-
-
-<h3 class="text-2xl font-bold text-blue-700 mb-5">
-
-Clean Spaces. Healthy Environment.
-
-</h3>
-
-
-<p class="text-gray-600 leading-relaxed mb-5">
-
-Clean Hub Uyo is a professional, reliable and affordable cleaning company providing quality cleaning solutions for homes, offices, hotels, schools and businesses in Uyo, Akwa Ibom State.
-
-</p>
-
-
-
-<p class="text-gray-600 leading-relaxed">
-
-We are committed to creating cleaner, healthier and more comfortable spaces through excellent cleaning services and customer satisfaction.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="bg-blue-50 rounded-2xl p-8">
-
-
-<div class="grid grid-cols-2 gap-5">
-
-
-<div class="bg-white rounded-xl p-5 shadow text-center">
-
-<h4 class="text-3xl font-bold text-blue-700">
-100%
-</h4>
-
-<p class="text-gray-600">
-Commitment
-</p>
-
-</div>
-
-
-
-
-<div class="bg-white rounded-xl p-5 shadow text-center">
-
-<h4 class="text-3xl font-bold text-blue-700">
-4+
-</h4>
-
-<p class="text-gray-600">
-Services
-</p>
-
-</div>
-
-
-
-
-<div class="bg-white rounded-xl p-5 shadow text-center">
-
-<h4 class="text-3xl font-bold text-blue-700">
-24/7
-</h4>
-
-<p class="text-gray-600">
-Support
-</p>
-
-</div>
-
-
-
-
-<div class="bg-white rounded-xl p-5 shadow text-center">
-
-<h4 class="text-3xl font-bold text-blue-700">
-100%
-</h4>
-
-<p class="text-gray-600">
-Quality
-</p>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
+        <!-- WHATSAPP BUTTON -->
+
+        <a
+          href="https://wa.me/2347063385694"
+          target="_blank"
+          class="hidden md:block bg-green-500 text-white px-5 py-3 rounded-full font-semibold hover:bg-green-600 transition"
+        >
+          💬 WhatsApp
+        </a>
+
+        <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+      </div>
+
+      <!-- MOBILE MENU -->
+
+      <div id="mobileMenu" class="hidden md:hidden bg-white px-6 pb-5">
+        <a href="#home" class="block py-2"> Home </a>
+
+        <a href="#about" class="block py-2"> About Us </a>
+
+        <a href="#services" class="block py-2"> Services </a>
+        <a href="#packages" class="hover:text-blue-600"> packages </a>
+
+        <a href="#gallery" class="block py-2"> Gallery </a>
+
+        <a href="#contact" class="block py-2"> Contact </a>
+
+        <a
+          href="https://wa.me/2347063385694"
+          target="_blank"
+          class="block mt-3 bg-green-500 text-white text-center py-3 rounded"
+        >
+          Chat on WhatsApp
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section
+      id="home"
+      class="relative h-[90vh] flex items-center overflow-hidden bg-blue-900"
+    >
+      <div class="absolute inset-0 hero-overlay"></div>
+
+      <div
+        class="absolute right-[-120px] top-20 w-[450px] h-[450px] bg-cyan-400 rounded-full opacity-20"
+      ></div>
+
+      <div
+        class="absolute left-[-100px] bottom-10 w-[300px] h-[300px] bg-blue-500 rounded-full opacity-20"
+      ></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 text-white">
+        <p class="uppercase tracking-widest text-blue-200 mb-4 animate-up">
+          Welcome To Clean Hub Uyo
+        </p>
+
+        <h2
+          class="text-4xl md:text-6xl font-extrabold leading-tight max-w-3xl animate-up"
+        >
+          Professional.
+
+          <br />
+
+          Reliable.
+
+          <br />
+
+          <span class="text-cyan-300"> Affordable. </span>
+
+          <br />
+
+          Cleaning Services
+        </h2>
+
+        <p class="mt-6 text-lg max-w-2xl text-gray-100">
+          Clean Hub Uyo provides professional, reliable and affordable cleaning
+          services for homes, offices, hotels, schools and businesses. We create
+          cleaner, healthier and more comfortable spaces.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a
+            href="https://wa.me/2347063385694"
+            target="_blank"
+            class="bg-green-500 hover:bg-green-600 px-7 py-4 rounded-lg font-semibold transition"
+          >
+            Book A Cleaning Service
+          </a>
+
+          <a
+            href="#services"
+            class="border border-white px-7 py-4 rounded-lg hover:bg-white hover:text-blue-700 transition"
+          >
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <p class="text-blue-600 font-semibold uppercase tracking-wider">
+            About Us
+          </p>
+
+          <h2 class="text-3xl md:text-4xl font-bold mt-3">
+            Professional Cleaning You Can Trust
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h3 class="text-2xl font-bold text-blue-700 mb-5">
+              Clean Spaces. Healthy Environment.
+            </h3>
+
+            <p class="text-gray-600 leading-relaxed mb-5">
+              Clean Hub Uyo is a professional, reliable and affordable cleaning
+              company providing quality cleaning solutions for homes, offices,
+              hotels, schools and businesses in Uyo, Akwa Ibom State.
+            </p>
+
+            <p class="text-gray-600 leading-relaxed">
+              We are committed to creating cleaner, healthier and more
+              comfortable spaces through excellent cleaning services and
+              customer satisfaction.
+            </p>
+          </div>
+
+          <div class="bg-blue-50 rounded-2xl p-8">
+            <div class="grid grid-cols-2 gap-5">
+              <div class="bg-white rounded-xl p-5 shadow text-center">
+                <h4 class="text-3xl font-bold text-blue-700">100%</h4>
+
+                <p class="text-gray-600">Commitment</p>
+              </div>
+
+              <div class="bg-white rounded-xl p-5 shadow text-center">
+                <h4 class="text-3xl font-bold text-blue-700">4+</h4>
+
+                <p class="text-gray-600">Services</p>
+              </div>
+
+              <div class="bg-white rounded-xl p-5 shadow text-center">
+                <h4 class="text-3xl font-bold text-blue-700">24/7</h4>
+
+                <p class="text-gray-600">Support</p>
+              </div>
+
+              <div class="bg-white rounded-xl p-5 shadow text-center">
+                <h4 class="text-3xl font-bold text-blue-700">100%</h4>
+
+                <p class="text-gray-600">Quality</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
 <!-- SERVICES SECTION -->
-
 
 <section id="services" class="py-20 bg-gray-100">
 
+  <div class="max-w-7xl mx-auto px-6">
 
-<div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
 
+      <p class="text-blue-600 font-semibold uppercase">
+        Our Services
+      </p>
 
-<div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mt-3">
+        Cleaning Solutions For Every Space
+      </h2>
 
+    </div>
 
-<p class="text-blue-600 font-semibold uppercase">
-Our Services
-</p>
 
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
 
-<h2 class="text-3xl md:text-4xl font-bold mt-3">
 
-Cleaning Solutions For Every Space
+      <div class="bg-white rounded-xl shadow p-6 hover:-translate-y-2 transition">
 
-</h2>
+        <div class="text-4xl">🏠</div>
 
+        <h3 class="font-bold text-xl mt-5">
+          Home Cleaning
+        </h3>
 
-</div>
+        <p class="text-gray-600 mt-3">
+          Professional cleaning services that keep your home fresh, comfortable and welcoming.
+        </p>
 
+      </div>
 
 
 
+      <div class="bg-white rounded-xl shadow p-6 hover:-translate-y-2 transition">
 
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-4xl">🏢</div>
 
+        <h3 class="font-bold text-xl mt-5">
+          Office Cleaning
+        </h3>
 
+        <p class="text-gray-600 mt-3">
+          Reliable cleaning solutions for offices and business environments.
+        </p>
 
+      </div>
 
 
-<div class="bg-white rounded-xl shadow p-6 hover:-translate-y-2 transition">
 
 
-<div class="text-4xl">
-🏠
-</div>
+      <div class="bg-white rounded-xl shadow p-6 hover:-translate-y-2 transition">
 
+        <div class="text-4xl">🏗️</div>
 
-<h3 class="font-bold text-xl mt-5">
-Residential Cleaning
-</h3>
+        <h3 class="font-bold text-xl mt-5">
+          Post Construction Cleaning
+        </h3>
 
+        <p class="text-gray-600 mt-3">
+          Complete cleaning after construction and renovation projects.
+        </p>
 
-<p class="text-gray-600 mt-3">
+      </div>
 
-Professional home cleaning services that keep your living space fresh and comfortable.
 
-</p>
 
 
-</div>
+      <div class="bg-white rounded-xl shadow p-6 hover:-translate-y-2 transition">
 
+        <div class="text-4xl">🛏️</div>
 
+        <h3 class="font-bold text-xl mt-5">
+          Airbnb Turnover Cleaning
+        </h3>
 
+        <p class="text-gray-600 mt-3">
+          Fast and reliable cleaning to prepare properties for new guests.
+        </p>
 
+      </div>
 
 
 
-<div class="bg-white rounded-xl shadow p-6 hover:-translate-y-2 transition">
 
+      <div class="bg-white rounded-xl shadow p-6 hover:-translate-y-2 transition">
 
-<div class="text-4xl">
-🏢
-</div>
+        <div class="text-4xl">📦</div>
 
+        <h3 class="font-bold text-xl mt-5">
+          Move In / Move Out Cleaning
+        </h3>
 
-<h3 class="font-bold text-xl mt-5">
-Office Cleaning
-</h3>
+        <p class="text-gray-600 mt-3">
+          Thorough cleaning support when moving into or leaving a property.
+        </p>
 
+      </div>
 
-<p class="text-gray-600 mt-3">
 
-Reliable cleaning solutions for offices and business environments.
 
-</p>
+    </div>
 
 
-</div>
-
-
-
-
-
-
-
-<div class="bg-white rounded-xl shadow p-6 hover:-translate-y-2 transition">
-
-
-<div class="text-4xl">
-✨
-</div>
-
-
-<h3 class="font-bold text-xl mt-5">
-Deep Cleaning
-</h3>
-
-
-<p class="text-gray-600 mt-3">
-
-Detailed cleaning for spaces requiring extra attention and care.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="bg-white rounded-xl shadow p-6 hover:-translate-y-2 transition">
-
-
-<div class="text-4xl">
-🏗️
-</div>
-
-
-<h3 class="font-bold text-xl mt-5">
-Post Construction Cleaning
-</h3>
-
-
-<p class="text-gray-600 mt-3">
-
-Complete cleaning solutions after construction and renovation projects.
-
-</p>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
 
+    <!-- WHY CHOOSE US -->
+     <!-- CLEANING PACKAGES SECTION -->
 
+<section id="packages" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
 
+    <div class="text-center mb-12">
+      <p class="text-blue-600 font-semibold uppercase tracking-wider">
+        Our Packages
+      </p>
 
+      <h2 class="text-3xl md:text-4xl font-bold mt-3">
+        Cleaning Packages & Pricing
+      </h2>
 
+      <p class="text-gray-600 mt-4">
+        Choose a cleaning plan that fits your home or office needs.
+      </p>
+    </div>
 
 
+    <div class="grid lg:grid-cols-2 gap-8">
 
 
-<!-- WHY CHOOSE US -->
+      <!-- HOME CLEANING PACKAGES -->
 
+      <div class="bg-blue-50 rounded-2xl p-8 shadow">
 
-<section class="py-20 bg-white">
+        <h3 class="text-2xl font-bold text-blue-700 mb-6 text-center">
+          🏠 Home Cleaning Packages
+        </h3>
 
 
-<div class="max-w-7xl mx-auto px-6">
+        <div class="overflow-x-auto">
 
+          <table class="w-full bg-white rounded-xl overflow-hidden">
 
-<div class="text-center mb-12">
+            <thead class="bg-blue-700 text-white">
 
+              <tr>
+                <th class="p-4 text-left">Package</th>
+                <th class="p-4">Weekly</th>
+                <th class="p-4">Monthly</th>
+              </tr>
 
-<h2 class="text-3xl md:text-4xl font-bold">
+            </thead>
 
-Why Choose Clean Hub Uyo?
 
-</h2>
+            <tbody class="text-gray-700">
 
+              <tr class="border-b">
+                <td class="p-4">Self-con</td>
+                <td class="p-4 text-center font-semibold">₦12,000</td>
+                <td class="p-4 text-center font-semibold">₦18,000</td>
+              </tr>
 
-</div>
 
+              <tr class="border-b">
+                <td class="p-4">1 Bedroom Apartment</td>
+                <td class="p-4 text-center font-semibold">₦15,000</td>
+                <td class="p-4 text-center font-semibold">₦25,000</td>
+              </tr>
 
 
+              <tr class="border-b">
+                <td class="p-4">2 Bedroom Apartment</td>
+                <td class="p-4 text-center font-semibold">₦20,000</td>
+                <td class="p-4 text-center font-semibold">₦35,000</td>
+              </tr>
 
 
-<div class="grid md:grid-cols-3 gap-8">
+              <tr>
+                <td class="p-4">Duplex</td>
+                <td class="p-4 text-center font-semibold">₦30,000</td>
+                <td class="p-4 text-center font-semibold">₦50,000</td>
+              </tr>
 
 
+            </tbody>
 
-<div class="text-center">
+          </table>
 
+        </div>
 
-<div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-3xl">
 
-✓
+        <a
+        href="https://wa.me/2347063385694?text=Hello%20Clean%20Hub,%20I%20want%20to%20book%20a%20home%20cleaning%20package"
+        target="_blank"
+        class="block text-center mt-6 bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600">
+          Book Home Cleaning
+        </a>
 
-</div>
 
+      </div>
 
-<h3 class="font-bold text-xl mt-5">
 
-Reliable Service
 
-</h3>
 
+      <!-- OFFICE CLEANING PACKAGE -->
 
-<p class="text-gray-600 mt-3">
 
-We provide dependable cleaning solutions designed around your needs.
+      <div class="bg-blue-50 rounded-2xl p-8 shadow">
 
-</p>
 
+        <h3 class="text-2xl font-bold text-blue-700 mb-6 text-center">
+          🏢 Office Cleaning Package
+        </h3>
 
-</div>
 
+        <div class="bg-white rounded-xl p-8 text-center">
 
 
+          <div class="mb-8">
 
+            <p class="text-gray-600">
+              Weekly Cleaning
+            </p>
 
+            <h4 class="text-4xl font-bold text-blue-700 mt-2">
+              ₦20,000
+            </h4>
 
+          </div>
 
-<div class="text-center">
 
 
-<div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-3xl">
+          <div>
 
-✓
+            <p class="text-gray-600">
+              Monthly Cleaning
+            </p>
 
-</div>
+            <h4 class="text-4xl font-bold text-blue-700 mt-2">
+              ₦50,000
+            </h4>
 
+          </div>
 
-<h3 class="font-bold text-xl mt-5">
 
-Affordable Pricing
 
-</h3>
+        </div>
 
 
-<p class="text-gray-600 mt-3">
+        <a
+        href="https://wa.me/2347063385694?text=Hello%20Clean%20Hub,%20I%20want%20to%20book%20office%20cleaning"
+        target="_blank"
+        class="block text-center mt-6 bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600">
+          Book Office Cleaning
+        </a>
 
-Quality cleaning services at fair and reasonable prices.
 
-</p>
+      </div>
 
 
-</div>
+    </div>
 
 
-
-
-
-
-
-<div class="text-center">
-
-
-<div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-3xl">
-
-✓
-
-</div>
-
-
-<h3 class="font-bold text-xl mt-5">
-
-Professional Team
-
-</h3>
-
-
-<p class="text-gray-600 mt-3">
-
-A dedicated team focused on excellent results.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-<!-- GALLERY SECTION -->
-
-<section id="gallery" class="py-20 bg-gray-100">
-
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="text-center mb-12">
-
-
-<p class="text-blue-600 font-semibold uppercase">
-Our Gallery
-</p>
-
-
-<h2 class="text-3xl md:text-4xl font-bold mt-3">
-
-Our Cleaning Work
-
-</h2>
-
-
-<p class="text-gray-600 mt-4">
-
-Project images can be added here as Clean Hub Uyo grows.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="grid md:grid-cols-3 gap-6">
-
-
-
-<div class="h-64 rounded-xl bg-blue-200 flex items-center justify-center">
-
-<div class="text-center">
-
-<div class="text-5xl">
-✨
-</div>
-
-<h3 class="font-bold mt-3">
-Professional Cleaning
-</h3>
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="h-64 rounded-xl bg-cyan-100 flex items-center justify-center">
-
-<div class="text-center">
-
-<div class="text-5xl">
-🏠
-</div>
-
-<h3 class="font-bold mt-3">
-Residential Cleaning
-</h3>
-
-</div>
-
-</div>
-
-
-
-
-
-
-<div class="h-64 rounded-xl bg-blue-100 flex items-center justify-center">
-
-<div class="text-center">
-
-<div class="text-5xl">
-🏢
-</div>
-
-<h3 class="font-bold mt-3">
-Office Cleaning
-</h3>
-
-</div>
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
 
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold">
+            Why Choose Clean Hub Uyo?
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-3xl"
+            >
+              ✓
+            </div>
+
+            <h3 class="font-bold text-xl mt-5">Reliable Service</h3>
+
+            <p class="text-gray-600 mt-3">
+              We provide dependable cleaning solutions designed around your
+              needs.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-3xl"
+            >
+              ✓
+            </div>
+
+            <h3 class="font-bold text-xl mt-5">Affordable Pricing</h3>
+
+            <p class="text-gray-600 mt-3">
+              Quality cleaning services at fair and reasonable prices.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-3xl"
+            >
+              ✓
+            </div>
+
+            <h3 class="font-bold text-xl mt-5">Professional Team</h3>
+
+            <p class="text-gray-600 mt-3">
+              A dedicated team focused on excellent results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- GALLERY SECTION -->
+
+    <section id="gallery" class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <p class="text-blue-600 font-semibold uppercase">Our Gallery</p>
+
+          <h2 class="text-3xl md:text-4xl font-bold mt-3">Our Cleaning Work</h2>
+
+          <p class="text-gray-600 mt-4">
+            Project images can be added here as Clean Hub Uyo grows.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="h-64 rounded-xl bg-blue-200 flex items-center justify-center"
+          >
+            <div class="text-center">
+              <div class="text-5xl">✨</div>
+
+              <h3 class="font-bold mt-3">Professional Cleaning</h3>
+            </div>
+          </div>
+
+          <div
+            class="h-64 rounded-xl bg-cyan-100 flex items-center justify-center"
+          >
+            <div class="text-center">
+              <div class="text-5xl">🏠</div>
+
+              <h3 class="font-bold mt-3">Residential Cleaning</h3>
+            </div>
+          </div>
+
+          <div
+            class="h-64 rounded-xl bg-blue-100 flex items-center justify-center"
+          >
+            <div class="text-center">
+              <div class="text-5xl">🏢</div>
+
+              <h3 class="font-bold mt-3">Office Cleaning</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold">Customer Reviews</h2>
+
+          <p class="hidden text-gray-600 mt-3">
+            Reviews from satisfied customers will appear here.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-50 rounded-xl p-6 shadow-sm">
+            <p class="text-gray-600 italic">
+              "Excellent cleaning service and professional approach."
+            </p>
+
+            <h4 class="font-bold mt-5">Customer</h4>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 shadow-sm">
+            <p class="text-gray-600 italic">
+              "Reliable team with great attention to detail."
+            </p>
+
+            <h4 class="font-bold mt-5">Customer</h4>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 shadow-sm">
+            <p class="text-gray-600 italic">
+              "Clean Hub helped create a better environment."
+            </p>
+
+            <h4 class="font-bold mt-5">Customer</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
 
+    <section id="contact" class="py-20 bg-blue-700 text-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-10">
+          <div>
+            <h2 class="text-4xl font-bold">Contact Clean Hub Uyo</h2>
 
+            <p class="mt-5 text-blue-100 leading-relaxed">
+              Book a professional cleaning service today and enjoy a cleaner,
+              healthier space.
+            </p>
 
+            <div class="mt-8 space-y-4">
+              <p>📞 07063385694 📞 09164400568</p>
 
+              <p>💬 WhatsApp: 07063385694</p>
 
+              <p>📧 israelaniefiok111@gmail.com</p>
 
+              <p>📍 Uyo, Akwa Ibom State, Nigeria</p>
+            </div>
+          </div>
 
+          <div class="bg-white text-gray-800 rounded-xl p-8">
+            <h3 class="text-2xl font-bold mb-5">Request Cleaning Service</h3>
 
-<!-- TESTIMONIALS -->
+            <input
+              id="customername"
+              type="text"
+              placeholder="your name"
+              class="w-full border p-3 rounded mb-4"
+            />
 
+            <input
+            id="customerphone"
+            type="tel"
+            placeholder="phone Number"
+            class="w-full border p-3 rounded mb-4"
+            />
 
-<section class="py-20 bg-white">
+            <textarea
+            id="serviceneeded"
+              placeholder="Service Needed"
+              class="w-full border p-3 rounded mb-4 h-32"
+            ></textarea>
 
+            <button
+  onclick="sendWhatsApp()"
+  class="w-full bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600 transition"
+>
+  Send Request On WhatsApp
+</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="max-w-7xl mx-auto px-6">
+    <!-- FOOTER -->
 
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h3 class="text-xl font-bold">Clean Hub Uyo</h3>
 
-<div class="text-center mb-12">
+        <p class="text-gray-400 mt-2">
+          Professional, Reliable and Affordable Cleaning Services
+        </p>
 
+        <p class="text-gray-500 text-sm mt-5">
+          © 2026 Clean Hub Uyo. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
-<h2 class="text-3xl md:text-4xl font-bold">
+    <!-- FLOATING WHATSAPP -->
 
-Customer Reviews
+    <a
+      href="https://wa.me/2347063385694"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 transition"
+    >
+      💬
+    </a>
 
-</h2>
+    <!-- JAVASCRIPT -->
 
+    <script>
+      function sendWhatsApp() {
 
-<p class=" hidden  text-gray-600 mt-3">
+  const name = document.getElementById("customerName").value;
 
-Reviews from satisfied customers will appear here.
+  const phone = document.getElementById("customerPhone").value;
 
-</p>
+  const service = document.getElementById("serviceNeeded").value;
 
 
-</div>
+  const message = `
+Hello Clean Hub Uyo,
 
+I want to request a cleaning service.
 
+Name: ${name}
 
+Phone Number: ${phone}
 
+Service Needed: ${service}
 
-<div class="grid md:grid-cols-3 gap-6">
+Thank you.
+`;
 
 
+  const whatsappNumber = "2347063385694";
 
-<div class="bg-gray-50 rounded-xl p-6 shadow-sm">
 
-<p class="text-gray-600 italic">
+  const whatsappURL =
+  "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
 
-"Excellent cleaning service and professional approach."
 
-</p>
+  window.open(whatsappURL, "_blank");
 
+}
+      const menuBtn = document.getElementById("menuBtn");
 
-<h4 class="font-bold mt-5">
+      const mobileMenu = document.getElementById("mobileMenu");
 
-Customer
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
 
-</h4>
-
-
-</div>
-
-
-
-
-
-
-<div class="bg-gray-50 rounded-xl p-6 shadow-sm">
-
-<p class="text-gray-600 italic">
-
-"Reliable team with great attention to detail."
-
-</p>
-
-
-<h4 class="font-bold mt-5">
-
-Customer
-
-</h4>
-
-
-</div>
-
-
-
-
-
-
-<div class="bg-gray-50 rounded-xl p-6 shadow-sm">
-
-<p class="text-gray-600 italic">
-
-"Clean Hub helped create a better environment."
-
-</p>
-
-
-<h4 class="font-bold mt-5">
-
-Customer
-
-</h4>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- CONTACT SECTION -->
-
-
-<section id="contact" class="py-20 bg-blue-700 text-white">
-
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="grid md:grid-cols-2 gap-10">
-
-
-
-<div>
-
-
-<h2 class="text-4xl font-bold">
-
-Contact Clean Hub Uyo
-
-</h2>
-
-
-<p class="mt-5 text-blue-100 leading-relaxed">
-
-Book a professional cleaning service today and enjoy a cleaner, healthier space.
-
-</p>
-
-
-
-
-<div class="mt-8 space-y-4">
-
-
-<p>
-📞 07063385694
-📞 09164400568
-</p>
-
-
-<p>
-💬 WhatsApp: 07063385694
-</p>
-
-
-<p>
-📧 israelaniefiok111@gmail.com
-</p>
-
-
-<p>
-📍 Uyo, Akwa Ibom State, Nigeria
-</p>
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="bg-white text-gray-800 rounded-xl p-8">
-
-
-<h3 class="text-2xl font-bold mb-5">
-
-Request Cleaning Service
-
-</h3>
-
-
-
-<input 
-type="text"
-placeholder="Your Name"
-class="w-full border p-3 rounded mb-4">
-
-
-
-<input 
-type="tel"
-placeholder="Phone Number"
-class="w-full border p-3 rounded mb-4">
-
-
-
-<textarea
-
-placeholder="Service Needed"
-
-class="w-full border p-3 rounded mb-4 h-32"></textarea>
-
-
-
-
-<a href="https://wa.me/2347063385694"
-
-target="_blank"
-
-class="block text-center bg-green-500 text-white py-3 rounded-lg font-semibold">
-
-
-Send Request On WhatsApp
-
-
-</a>
-
-
-
-</div>
-
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- FOOTER -->
-
-
-<footer class="bg-gray-900 text-white py-8">
-
-
-<div class="max-w-7xl mx-auto px-6 text-center">
-
-
-<h3 class="text-xl font-bold">
-
-Clean Hub Uyo
-
-</h3>
-
-
-
-<p class="text-gray-400 mt-2">
-
-Professional, Reliable and Affordable Cleaning Services
-
-</p>
-
-
-
-
-<p class="text-gray-500 text-sm mt-5">
-
-© 2026 Clean Hub Uyo. All Rights Reserved.
-
-</p>
-
-
-</div>
-
-
-</footer>
-
-
-
-
-
-
-
-
-<!-- FLOATING WHATSAPP -->
-
-
-<a href="https://wa.me/2347063385694"
-
-target="_blank"
-
-class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 transition">
-
-
-💬
-
-
-</a>
-
-
-
-
-
-
-
-
-<!-- JAVASCRIPT -->
-
-
-<script>
-
-
-const menuBtn = document.getElementById("menuBtn");
-
-const mobileMenu = document.getElementById("mobileMenu");
-
-
-
-menuBtn.addEventListener("click",()=>{
-
-
-mobileMenu.classList.toggle("hidden");
-
-
-});
-
-
-
-
-
-document.querySelectorAll("#mobileMenu a").forEach(link=>{
-
-
-link.addEventListener("click",()=>{
-
-
-mobileMenu.classList.add("hidden");
-
-
-});
-
-
-});
-
-
-</script>
-
-
-
-
-</body>
-
+      document.querySelectorAll("#mobileMenu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
 </html>
